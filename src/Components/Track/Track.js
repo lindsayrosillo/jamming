@@ -3,7 +3,7 @@ import React from 'react';
 class Track extends React.Component {
     renderAction() {
        if (isRemoval === true) {
-           return <a>+</a>
+           return <a onClick={this.addTrack}>+</a>
        } else { 
            return <a>-</a>
        }
@@ -21,3 +21,5 @@ class Track extends React.Component {
         );
     }
 }
+
+export default Track;
