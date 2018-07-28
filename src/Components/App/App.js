@@ -105,7 +105,7 @@ class App extends Component {
           <SearchResults searchResults={this.state.searchResults} />
           <Playlist onSave={this.savePlaylist} onNameChange={this.updatePlaylistName} onRemove={this.removeTrack} playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} />
           </div>
-          </div>
+          </div> 
       </div>
       );
     }
