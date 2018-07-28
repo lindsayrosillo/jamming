@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      SearchResults: [
+      searchResults: [
         {
           id: 1,
           name: 'This Song',
@@ -74,7 +74,7 @@ class App extends Component {
   }
 
   updatePlaylistName(name) {
-    this.setState({playlistName: name});
+    this.setState({playlistName: name})
   }
 
   savePlaylist() {
