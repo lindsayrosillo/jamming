@@ -2,26 +2,17 @@ import React from 'react';
 import Track from '../Track/Track';
 import './TrackList.css';
 
-class Tracklist extends React.Component{
-    constructor(props){
-        super(props);
-
-        this.addTrack = this.addTrack.bind(this);
-    }
-
-    addTrack(){
-        this.props.onAdd(this.props.track);
-    }
-
+class TrackList extends React.Component{
+  
     render(){
         return(
         <div className="TrackList">
             {this.props.track.map(track =>
-                {return <Track track={track} onAdd={this.props.onAdd} isRemoval={false} />} )
+                {return <Track track={track} onAdd={this.props.onAdd} onRemove={this.props.onRemove} isRemoval={this.props.isRemoval} />} )
             }
         </div>
         );
     }
 }
 
-export default Tracklist;
+export default TrackList;
